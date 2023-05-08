@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "delivero_app",
+    "slug": "delivero_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.first123.delivero_app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBXx6LFTmLPMFov58P38Oy_B7_QiEEfUJQ"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dc467af1-6a47-4a9b-b5f5-9e99f2e37962"
+      }
+    }
+  }
+}
