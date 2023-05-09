@@ -15,6 +15,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TpAPP.Services.OrderAPI.DbContexts;
+using TpAPP.Services.OrderAPI.Extensions;
+using TpAPP.Services.OrderAPI.Messaging;
 using TpAPP.Services.OrderAPI.Repository;
 
 namespace TpAPP.Services.OrderAPI
@@ -42,7 +44,7 @@ namespace TpAPP.Services.OrderAPI
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
             optionBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             services.AddSingleton(new OrderRepository(optionBuilder.Options));
-
+            services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
             services.AddControllers();
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
@@ -114,6 +116,8 @@ namespace TpAPP.Services.OrderAPI
             {
                 endpoints.MapControllers();
             });
+
+            app.UserAzureServiceBusConsumer();
         }
     }
 }

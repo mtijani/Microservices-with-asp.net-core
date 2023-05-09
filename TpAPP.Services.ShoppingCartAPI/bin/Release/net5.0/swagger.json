@@ -1,0 +1,348 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "TppApp.Services.ShoppingCartAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/cart/GetCart/{userId}": {
+      "get": {
+        "tags": [
+          "CartAPI"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/AddCart": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CartDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/UpdateCart": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CartDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/RemoveCart": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/ApplyCoupon": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CartDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/RemoveCoupon": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/cart/Checkout": {
+      "post": {
+        "tags": [
+          "CartAPI"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CheckoutHeaderDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CartDetailsDto": {
+      "type": "object",
+      "properties": {
+        "cartDetailsId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cartHeaderId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cartHeader": {
+          "$ref": "#/definitions/CartHeaderDto"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "product": {
+          "$ref": "#/definitions/ProductDto"
+        },
+        "count": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CartDto": {
+      "type": "object",
+      "properties": {
+        "cartHeader": {
+          "$ref": "#/definitions/CartHeaderDto"
+        },
+        "cartDetails": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CartDetailsDto"
+          }
+        }
+      }
+    },
+    "CartHeaderDto": {
+      "type": "object",
+      "properties": {
+        "cartHeaderId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "couponCode": {
+          "type": "string"
+        }
+      }
+    },
+    "CheckoutHeaderDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "messageCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "cartHeaderId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "couponCode": {
+          "type": "string"
+        },
+        "orderTotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "discountTotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "pickUpDateTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "cardNumber": {
+          "type": "string"
+        },
+        "cvv": {
+          "type": "string"
+        },
+        "expiryMonthYear": {
+          "type": "string"
+        },
+        "cartTotalItems": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cartDetails": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CartDetailsDto"
+          }
+        }
+      }
+    },
+    "ProductDto": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "price": {
+          "format": "double",
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "categoryName": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Enter 'Bearer' [space] and your token"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

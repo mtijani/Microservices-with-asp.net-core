@@ -9,24 +9,49 @@ using TpAPP.Services.OrderAPI.Messages;
 using TpAPP.Services.OrderAPI.Repository;
 using TpAPP.Services.OrderAPI.Models;
 using Microsoft.Extensions.Configuration;
-
+using Azure.Messaging.EventHubs.Processor;
 
 namespace TpAPP.Services.OrderAPI.Messaging
 {
-    public class AzureServiceBusConsumer
+    public class AzureServiceBusConsumer:IAzureServiceBusConsumer
     {
         private readonly string serviceBusConnectionString;
-        private readonly string subscriptionName;
-        private readonly string checkoutMessageTopic;
+        private readonly string subscriptionNameCheckOut;
+        private readonly string CheckoutMessageTopic;
         private readonly IConfiguration _configuration;
         private readonly OrderRepository _orderRepository;
+        private ServiceBusProcessor checkOutProcessor;
         public AzureServiceBusConsumer(OrderRepository orderRepository,IConfiguration configuration)
         {
             _orderRepository = orderRepository;
             _configuration = configuration;
             serviceBusConnectionString = _configuration.GetValue<string>("ServiceBusConnectionString");
-            subscriptionName = _configuration.GetValue<string>("subscriptionName");
-            checkoutMessageTopic = _configuration.GetValue<string>("CheckoutMessageTopic");
+            subscriptionNameCheckOut = _configuration.GetValue<string>("subscriptionNameCheckOut");
+            CheckoutMessageTopic = _configuration.GetValue<string>("CheckoutMessageTopic");
+
+
+            var client = new ServiceBusClient(serviceBusConnectionString);
+            checkOutProcessor = client.CreateProcessor(CheckoutMessageTopic, subscriptionNameCheckOut);
+
+        }
+        public async Task Start()
+        {
+            checkOutProcessor.ProcessMessageAsync += OnCheckOutRecieved;
+            checkOutProcessor.ProcessErrorAsync += ErrorHandler;
+            await checkOutProcessor.StartProcessingAsync();
+
+        }
+        public async Task Stop()
+        {
+            await checkOutProcessor.StopProcessingAsync();
+            await checkOutProcessor.DisposeAsync();
+
+        }
+        Task ErrorHandler(Azure.Messaging.ServiceBus.ProcessErrorEventArgs args)
+        {
+            Console.WriteLine(args.Exception.ToString());
+            return Task.CompletedTask;
+
 
         }
         private async Task OnCheckOutRecieved(ProcessMessageEventArgs args)

@@ -123,6 +123,11 @@ namespace TpAPP.Controllers
             {
                 var accessToken = await HttpContext.GetTokenAsync("access_token");
                 var response = await _cartService.Checkout<ResponseDto>(cartDto.CartHeader,accessToken);
+                if (!response.isSuccess)
+                {
+                    TempData["Error"] = response.DisplayMessage;
+                    return RedirectToAction(nameof(Checkout));
+                }
                 return RedirectToAction(nameof(Confirmation));
 
             }

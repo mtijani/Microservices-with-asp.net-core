@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YuwyMumN9woRwX+l9PlTm9wU2XU1fGrDwl+XEA+S8s3XETaLurIf0ALUVULPd9nKEqcLmhe4lcI/v1EB4d2JXQ==",
+  "dgSpecHash": "XDodTFp6x6C/thDUSwxEMrcbfZFTqxcEZrtsP4NYF0kmsBs0ep7uiRWxa5gO5Q+1WAubquOHzuYgrZQ57XB4MQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.CouponAPI\\TpAPP.Services.CouponAPI.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Tijani\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",

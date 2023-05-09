@@ -67,3 +67,14 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\obj\Debug\net5.0\TpAP
 C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\obj\Debug\net5.0\ref\TpAPP.Services.OrderAPI.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\obj\Debug\net5.0\TpAPP.Services.OrderAPI.pdb
 C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\obj\Debug\net5.0\TpAPP.Services.OrderAPI.genruntimeconfig.cache
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Azure.Core.Amqp.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.Azure.Amqp.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.Azure.ServiceBus.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\System.Memory.Data.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP.Services.OrderAPI\bin\Debug\net5.0\Azure.Messaging.EventHubs.dll

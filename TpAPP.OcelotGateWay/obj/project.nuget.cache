@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BWuwIfq5r+rJpiqEB5ZBZpNBUiDE90UoXMMmJBHX3uWCeiSKxPvPtH0MFa8p2SrhGYZaWPA2KHddr7PrHAdiAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.OcelotGateWay\\TpAPP.OcelotGateWay.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tijani\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

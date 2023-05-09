@@ -5,7 +5,6 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\TpAPP.deps.json
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\TpAPP.runtimeconfig.json
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\TpAPP.runtimeconfig.dev.json
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\TpAPP.dll
-C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\ref\TpAPP.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\TpAPP.pdb
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -325,7 +324,6 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\ru\Microsoft.CodeAnaly
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.csprojAssemblyReference.cache
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.AssemblyInfoInputs.cache
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.AssemblyInfo.cs
@@ -335,7 +333,6 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.MvcApplicationPa
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.RazorAssemblyInfo.cache
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.RazorAssemblyInfo.cs
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\staticwebassets\TpAPP.StaticWebAssets.Manifest.cache
-C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\staticwebassets\TpAPP.StaticWebAssets.xml
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\scopedcss\bundle\TpAPP.styles.css
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.TagHelpers.input.cache
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.TagHelpers.output.cache
@@ -373,3 +370,6 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\Razor\Views\Home\Detai
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\Razor\Views\Cart\CartIndex.cshtml.g.cs
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\Razor\Views\Cart\Checkout.cshtml.g.cs
 C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\Razor\Views\Cart\Confirmation.cshtml.g.cs
+C:\Users\Tijani\source\repos\TpSol\TpAPP\bin\Debug\net5.0\ref\TpAPP.dll
+C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\TpAPP.csprojAssemblyReference.cache
+C:\Users\Tijani\source\repos\TpSol\TpAPP\obj\Debug\net5.0\staticwebassets\TpAPP.StaticWebAssets.xml

@@ -36,11 +36,13 @@ namespace TpAPP.Services.ShoppingCartAPI
                        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ICouponRepository, CouponRepository>();
             services.AddSingleton<ImessageBus, AzureServiceBusMessageBus>();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            services.AddControllers();  
+            services.AddControllers();
+            services.AddHttpClient<ICouponRepository, CouponRepository>(u => u.BaseAddress = new Uri(Configuration["ServiceUrls:CouponAPI"]));
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {

@@ -17,8 +17,10 @@ namespace TpAPP.Services.ShoppingCartAPI.Controllers
         private readonly ICartRepository _cartRepository;
         protected ResponseDto _response;
         private readonly ImessageBus _messageBus;
-        public CartAPIController(ICartRepository cartRepository, ImessageBus messageBus)
+        private readonly ICouponRepository _couponRepository;
+        public CartAPIController(ICartRepository cartRepository, ImessageBus messageBus ,ICouponRepository couponRepository)
         {
+            _couponRepository = couponRepository;
             _cartRepository = cartRepository;
             this._response = new ResponseDto();
             _messageBus = messageBus;
@@ -120,12 +122,24 @@ namespace TpAPP.Services.ShoppingCartAPI.Controllers
         [HttpPost("Checkout")]
         public async Task<object> Checkout(CheckoutHeaderDto checkoutHeader)
         {
+
             try
             {
                 CartDto cartDto = await _cartRepository.GetCardByUserId(checkoutHeader.UserId);
                 if(cartDto == null)
                 {
                     return BadRequest();
+                }
+                if(!string.IsNullOrEmpty(checkoutHeader.CouponCode))
+                {
+                    CouponDto coupon = await _couponRepository.GetCoupon(checkoutHeader.CouponCode);
+                    if (checkoutHeader.DiscountTotal != coupon.DiscountAmount)
+                    {
+                        _response.isSuccess = false;
+                        _response.ErrorMessages = new List<string>() { "Coupon Price Has changed please confirm" };
+                        _response.DisplayMessage = "Coupon Price Hase changed, Please Confirm";
+                        return _response;
+                    }
                 }
                 // the message we want to send
                 checkoutHeader.CartDetails = cartDto.CartDetails;
