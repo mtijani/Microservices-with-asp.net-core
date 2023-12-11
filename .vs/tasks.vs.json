@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tâche-TpAPP",
+      "appliesTo": "TpAPP/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tâche-TpSol",
+      "appliesTo": "TpSol.sln",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tâche-TpAPP",
+      "appliesTo": "TpAPP/",
+      "type": "launch"
+    }
+  ]
+}

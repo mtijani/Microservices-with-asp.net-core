@@ -50,7 +50,7 @@ namespace TppApp.Services.ProductAPI.Migrations
                             ProductId = 1,
                             CategoryName = "Appetizer",
                             Description = " Delicious and delightful  .<br/>Spicy Tunisian Chorba",
-                            ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Chorba.jpeg",
+                            ImageUrl = "https://dotnettp.blob.core.windows.net/food/Chorba.jpg",
                             Name = "Chorba",
                             Price = 15.0
                         },
@@ -59,7 +59,7 @@ namespace TppApp.Services.ProductAPI.Migrations
                             ProductId = 2,
                             CategoryName = "Appetizer",
                             Description = "North african Tajine with eggs, cheese and meat ",
-                            ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Tajine.jpeg",
+                            ImageUrl = "https://dotnettp.blob.core.windows.net/food/tajine.jpg",
                             Name = "Tajine",
                             Price = 13.99
                         },
@@ -68,8 +68,8 @@ namespace TppApp.Services.ProductAPI.Migrations
                             ProductId = 3,
                             CategoryName = "Dessert",
                             Description = "authentic baklava",
-                            ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Baklava.jpeg",
-                            Name = "Baklava",
+                            ImageUrl = "https://dotnettp.blob.core.windows.net/food/Baklawa-Tunisienne.jpg",
+                            Name = "Baklawa",
                             Price = 10.99
                         },
                         new
@@ -77,7 +77,7 @@ namespace TppApp.Services.ProductAPI.Migrations
                             ProductId = 4,
                             CategoryName = "Entree",
                             Description = "Delicious kouskous with vegetables and fish",
-                            ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/kouskous.jpeg",
+                            ImageUrl = "https://dotnettp.blob.core.windows.net/food/couscous-tunisien.jpeg",
                             Name = "Kouskous",
                             Price = 15.0
                         });

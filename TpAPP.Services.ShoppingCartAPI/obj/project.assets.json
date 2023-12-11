@@ -6117,19 +6117,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tijani\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.ShoppingCartAPI\\TpAPP.Services.ShoppingCartAPI.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.ShoppingCartAPI\\TpAPP.Services.ShoppingCartAPI.csproj",
       "projectName": "TpAPP.Services.ShoppingCartAPI",
-      "projectPath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.ShoppingCartAPI\\TpAPP.Services.ShoppingCartAPI.csproj",
-      "packagesPath": "C:\\Users\\Tijani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.ShoppingCartAPI\\obj\\",
+      "projectPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.ShoppingCartAPI\\TpAPP.Services.ShoppingCartAPI.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.ShoppingCartAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tijani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6143,8 +6143,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj": {
-              "projectPath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj"
+            "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj"
             }
           }
         }
@@ -6220,7 +6220,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

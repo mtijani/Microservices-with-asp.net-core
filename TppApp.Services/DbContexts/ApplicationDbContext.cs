@@ -25,7 +25,7 @@ namespace TppApp.Services.ProductAPI.DbContexts
                 Name = "Chorba",
                 Price = 15,
                 Description = " Delicious and delightful  .<br/>Spicy Tunisian Chorba",
-                ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Chorba.jpeg",
+                ImageUrl = "https://dotnettp.blob.core.windows.net/food/Chorba.jpg",
                 CategoryName = "Appetizer"
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -34,16 +34,16 @@ namespace TppApp.Services.ProductAPI.DbContexts
                 Name = "Tajine",
                 Price = 13.99,
                 Description = "North african Tajine with eggs, cheese and meat ",
-                ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Tajine.jpeg",
+                ImageUrl = "https://dotnettp.blob.core.windows.net/food/tajine.jpg",
                 CategoryName = "Appetizer"
             });
             modelBuilder.Entity<Product>().HasData(new Product
             {
                 ProductId = 3,
-                Name = "Baklava",
+                Name = "Baklawa",
                 Price = 10.99,
                 Description = "authentic baklava",
-                ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/Baklava.jpeg",
+                ImageUrl = "https://dotnettp.blob.core.windows.net/food/Baklawa-Tunisienne.jpg",
                 CategoryName = "Dessert"
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -52,7 +52,7 @@ namespace TppApp.Services.ProductAPI.DbContexts
                 Name = "Kouskous",
                 Price = 15,
                 Description = "Delicious kouskous with vegetables and fish",
-                ImageUrl = "https://micservicestp.blob.core.windows.net/tpmicroservices/kouskous.jpeg",
+                ImageUrl = "https://dotnettp.blob.core.windows.net/food/couscous-tunisien.jpeg",
                 CategoryName = "Entree"
             });
         }

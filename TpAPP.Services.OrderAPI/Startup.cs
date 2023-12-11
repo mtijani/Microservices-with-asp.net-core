@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TpAPP.MessageBus;
 using TpAPP.Services.OrderAPI.DbContexts;
 using TpAPP.Services.OrderAPI.Extensions;
 using TpAPP.Services.OrderAPI.Messaging;
@@ -45,6 +46,7 @@ namespace TpAPP.Services.OrderAPI
             optionBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             services.AddSingleton(new OrderRepository(optionBuilder.Options));
             services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
+            services.AddSingleton<ImessageBus, AzureServiceBusMessageBus>();
             services.AddControllers();
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
@@ -65,7 +67,7 @@ namespace TpAPP.Services.OrderAPI
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TppApp.Services.CouponAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TppApp.Services.OrderAPI", Version = "v1" });
               //  c.EnableAnnotations();
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

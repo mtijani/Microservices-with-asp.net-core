@@ -11,10 +11,10 @@ namespace TppApp.Services.ProductAPI.Migrations
                 columns: new[] { "ProductId", "CategoryName", "Description", "ImageUrl", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1, "Appetizer", " Delicious and delightful  .<br/>Spicy Tunisian Chorba", "https://micservicestp.blob.core.windows.net/tpmicroservices/Chorba.jpeg", "Chorba", 15.0 },
-                    { 2, "Appetizer", "North african Tajine with eggs, cheese and meat ", "https://micservicestp.blob.core.windows.net/tpmicroservices/Tajine.jpeg", "Tajine", 13.99 },
-                    { 3, "Dessert", "authentic baklava", "https://micservicestp.blob.core.windows.net/tpmicroservices/Baklava.jpeg", "Baklava", 10.99 },
-                    { 4, "Entree", "Delicious kouskous with vegetables and fish", "https://micservicestp.blob.core.windows.net/tpmicroservices/kouskous.jpeg", "Kouskous", 15.0 }
+                    { 1, "Appetizer", " Delicious and delightful  .<br/>Spicy Tunisian Chorba", "https://dotnettp.blob.core.windows.net/food/Chorba.jpg", "Chorba", 15.0 },
+                    { 2, "Appetizer", "North african Tajine with eggs, cheese and meat ", "https://dotnettp.blob.core.windows.net/food/tajine.jpg", "Tajine", 13.99 },
+                    { 3, "Dessert", "authentic baklawa", "https://dotnettp.blob.core.windows.net/food/Baklawa-Tunisienne.jpg", "Baklava", 10.99 },
+                    { 4, "Entree", "Delicious kouskous with vegetables and fish", "https://dotnettp.blob.core.windows.net/food/couscous-tunisien.jpeg", "Kouskous", 15.0 }
                 });
         }
 

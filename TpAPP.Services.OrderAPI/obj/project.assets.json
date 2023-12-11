@@ -2445,6 +2445,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "TpAPP.MessageBus/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Azure.Messaging.ServiceBus": "7.13.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/TpAPP.MessageBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TpAPP.MessageBus.dll": {}
+        }
       }
     }
   },
@@ -8320,6 +8334,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "TpAPP.MessageBus/1.0.0": {
+      "type": "project",
+      "path": "../TpAPP.MessageBus/TpAPP.MessageBus.csproj",
+      "msbuildProject": "../TpAPP.MessageBus/TpAPP.MessageBus.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8337,23 +8356,24 @@
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Swashbuckle.AspNetCore.Annotations >= 6.5.0",
-      "Swashbuckle.AspNetCore.Swagger >= 6.5.0"
+      "Swashbuckle.AspNetCore.Swagger >= 6.5.0",
+      "TpAPP.MessageBus >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tijani\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.OrderAPI\\TpAPP.Services.OrderAPI.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.OrderAPI\\TpAPP.Services.OrderAPI.csproj",
       "projectName": "TpAPP.Services.OrderAPI",
-      "projectPath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.OrderAPI\\TpAPP.Services.OrderAPI.csproj",
-      "packagesPath": "C:\\Users\\Tijani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tijani\\source\\repos\\TpSol\\TpAPP.Services.OrderAPI\\obj\\",
+      "projectPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.OrderAPI\\TpAPP.Services.OrderAPI.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.Services.OrderAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tijani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8366,7 +8386,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\Microservices-with-asp.net-coree\\TpAPP.MessageBus\\TpAPP.MessageBus.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -8456,7 +8480,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

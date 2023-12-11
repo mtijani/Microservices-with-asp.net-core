@@ -6,7 +6,7 @@ using TpAPP.Services.OrderAPI.Models;
 
 namespace TpAPP.Services.OrderAPI.Repository
 {
-    interface IOrderRepository
+  public interface IOrderRepository
     {
         Task<bool> AddOrder(OrderHeader orderHeader);
         Task UpdateOrderPaymentStatus(int orderHaederId, bool paid);

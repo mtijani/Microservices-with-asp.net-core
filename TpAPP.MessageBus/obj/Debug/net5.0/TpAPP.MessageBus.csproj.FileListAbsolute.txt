@@ -10,3 +10,15 @@ C:\Users\Tijani\source\repos\TpSol\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.Messa
 C:\Users\Tijani\source\repos\TpSol\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP.MessageBus\obj\Debug\net5.0\ref\TpAPP.MessageBus.dll
 C:\Users\Tijani\source\repos\TpSol\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.pdb
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\bin\Debug\net5.0\TpAPP.MessageBus.deps.json
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\bin\Debug\net5.0\TpAPP.MessageBus.dll
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\bin\Debug\net5.0\ref\TpAPP.MessageBus.dll
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\bin\Debug\net5.0\TpAPP.MessageBus.pdb
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.dll
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\ref\TpAPP.MessageBus.dll
+C:\Users\user\Source\Repos\Microservices-with-asp.net-coree\TpAPP.MessageBus\obj\Debug\net5.0\TpAPP.MessageBus.pdb

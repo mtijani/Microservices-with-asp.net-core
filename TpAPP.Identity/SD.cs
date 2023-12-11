@@ -47,8 +47,8 @@ namespace TpAPP.Services.Identity
                     ClientId="TpAPP",
                     ClientSecrets = {new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris={ "https://localhost:44319/signin-oidc" },
-                    PostLogoutRedirectUris={ "https://localhost:44319/signout-callback-oidc" },
+                    RedirectUris={ "https://localhost:5001/signin-oidc" },
+                    PostLogoutRedirectUris={ "https://localhost:5001/signout-callback-oidc" },
                     AllowedScopes = new List<string>
                      {
                         IdentityServerConstants.StandardScopes.OpenId,

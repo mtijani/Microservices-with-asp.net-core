@@ -144,7 +144,8 @@ namespace TpAPP.Services.ShoppingCartAPI.Controllers
                 // the message we want to send
                 checkoutHeader.CartDetails = cartDto.CartDetails;
                 // logic to add message to process order. 
-                await _messageBus.PublishMessage(checkoutHeader, "checkoutmessagetopic");
+                await _messageBus.PublishMessage(checkoutHeader, "checkoutqueue");
+                await _cartRepository.ClearCart(checkoutHeader.UserId);
                     //bool isSuccess = await _cartRepository.RemoveCoupon(userId);
                     //_response.Result = isSuccess;
             }
